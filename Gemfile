@@ -28,9 +28,32 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Rubocop gem to correct linter related issues keeping your code close to standard coding practices
+gem 'rubocop'
+# Devise security gem
+gem 'devise'
+# To handle images
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'
+# Use omniauth-facebook gem allows Facebook login integration
+gem 'omniauth-facebook'
+# Allows access to twitter's Bootstrap framework
+gem 'bootstrap'
+# Hirb gem organizes the display for active record information into tables when using the rails console… eg. After opening rails console type Hirb.enable to activate it
+gem 'hirb'  
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  # For better debugging and easier commands
+  gem 'pry'
+  gem 'pry-byebug'
+  # RSpec Testing
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  # A Ruby gem to load environment variables from `.env` files.
+  gem 'dotenv-rails'
 end
 
 group :development do

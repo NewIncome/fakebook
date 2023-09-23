@@ -9,5 +9,3 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: %i[fname lname image])
   end
 end
-
- # EXPLAIN in notes, briefly, what has been done here!!

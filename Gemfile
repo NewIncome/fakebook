@@ -33,7 +33,7 @@ gem 'rubocop'
 # Devise security gem
 gem 'devise'
 # To handle images
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.2'
 gem 'mini_magick'
 # Use omniauth-facebook gem allows Facebook login integration
 gem 'omniauth-facebook'
